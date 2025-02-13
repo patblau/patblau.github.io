@@ -15,6 +15,7 @@
 /* Base styles */
 body {
     background-color: var(#fcfbfb);
+    font-family: Segoe Print, Aptos (Body), sans-serif;
     color: var(--text-on-white);
     margin: 0;
     padding: 0;
@@ -34,6 +35,12 @@ header {
     text-align: center;
 }
 
+/* Font Family for Specific Elements */
+.home-title, 
+.msg h2 {
+    font-family: Segoe Print, Aptos (Body), sans-serif;
+}
+
 /* Navigation */
 nav {
     background-color: var(--nav-background-color);
@@ -44,6 +51,7 @@ nav a {
     color: var(--text-on-color);
     text-decoration: none;
     margin: 0 15px;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -65,7 +73,7 @@ nav a:hover {
     padding: 10px 15px;
     margin: 10px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 5px;  /* Added Border Radius */
     display: inline-block;
 }
 
@@ -100,6 +108,13 @@ nav a:hover {
 
 .msg p {
     color: var(--text-on-white);
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+
+/* Padding Adjustments */
+#logo_link {
+    padding-top: 5px;
 }
 
 /* Images */
