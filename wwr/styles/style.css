@@ -122,6 +122,10 @@ nav a:hover {
     max-width: 80px;
 }
 
+.icon {
+    padding-top: 10px;
+}
+
 #hero-img {
     width: 100px;
     display: block;
