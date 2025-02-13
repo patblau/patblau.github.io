@@ -1,91 +1,137 @@
-/* these colors below should be chosen from among the palette colors */
-:selectors {
-    --body-background-color:white  /* headlines on a white background */ 
-    --header-color:  /* headlines on a colored background */ 
-    --nav-background-color:
-    --nave-a-hover-color:  /* paragraph text on a white background */ 
-    --.book, .join-color:  /* paragraph text on a colored background */ 
-    --#background-background-color: 
-    --.msg-color: 
-    --footer-background-color: 
-    --footer-color: 
-  }
-/*  max-with for div */
-div {
-  max-width: 1600px;
-  margin: 0 auto;
-  text-align: center;
-  #background
-        height: 725px;
+/* Define custom color palette */
+:root {
+    --body-background-color: #ffffff; /* white */
+    --header-color: #4B3832; /* dark brown for headlines on a colored background */
+    --nav-background-color: #6E6658; /* muted brown */
+    --nav-a-hover-color: #A68A64; /* hover color for nav links */
+    --text-on-white: #333333; /* dark gray for text on white */
+    --text-on-color: #396E94; /* blue for text on colored backgrounds */
+    --background-color: #D1B38A; /* background section color */
+    --msg-color: #F5E6CC; /* light cream for message box */
+    --footer-background-color: #4B3832; /* dark brown for footer */
+    --footer-color: #FAF3E0; /* light text for footer */
 }
-nav a {
-    #hero-msg h1, #hero-msg h4
-    .button_box
-    main section
-    text-align: center;
-    color:
-    text-decoration: none;
-}
-/*  selector colors */
+
+/* Base styles */
 body {
-    background-color: white; 
-    color: black;
+    background-color: var(#fcfbfb);
+    color: var(--text-on-white);
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    text-align: center;
 }
+
+h2 {
+    margin: 0;
+}
+
+/* Header */
 header {
-    background-color:
-    color:
+    background-color: var(--header-color);
+    color: var(--text-on-color);
+    padding: 20px;
+    text-align: center;
 }
-nav a:hover {
-    background-color: black;
-    color: #d9c2a3; 
+
+/* Navigation */
+nav {
+    background-color: var(--nav-background-color);
+    padding: 10px;
 }
-.home-title {
-    color: 
-}
-h4 {
-    color: 
-}
-.book, .join {
-    background-color:
-    color:
+
+nav a {
+    color: var(--text-on-color);
     text-decoration: none;
+    margin: 0 15px;
 }
+
+nav a:hover {
+    background-color: var(--nav-a-hover-color);
+    color: var(--body-background-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Headings */
+.home-title, h4 {
+    color: var(--header-color);
+}
+
+/* Buttons */
+.book, .join {
+    background-color: var(--nav-background-color);
+    color: var(--text-on-color);
+    padding: 10px 15px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
 .book:hover, .join:hover {
-    background-color:
-    color:
+    background-color: var(--nav-a-hover-color);
+    color: var(--body-background-color);
 }
+
+/* Background section */
 #background {
-    background-color:
-    color:
+    background-color: var(--background-color);
+    color: var(--text-on-color);
+    height: 725px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* Message box */
 .msg {
-    background-color:
-    color:
+    background-color: var(--msg-color);
+    color: var(--text-on-white);
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
 }
+
 .msg h2 {
-    color: 
+    color: var(--header-color);
 }
+
 .msg p {
-    color: 
+    color: var(--text-on-white);
 }
+
+/* Images */
 .logo, .icon {
     max-width: 80px;
 }
+
 #hero-img {
     width: 100px;
+    display: block;
+    margin: 20px auto;
 }
+
+/* Footer */
 footer {
-    background-color:
-    color:
+    background-color: var(--footer-background-color);
+    color: var(--footer-color);
+    padding: 20px;
+    text-align: center;
 }
+
 footer a {
-    color: ;
+    color: var(--footer-color);
     text-decoration: none;
+    margin: 0 10px;
 }
+
 footer a:hover {
-    color:  ;
+    color: var(--nav-a-hover-color);
 }
+
 footer p {
     font-size: 1.2em;
     text-decoration: underline;
-}    
+}
