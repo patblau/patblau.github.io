@@ -95,6 +95,7 @@ nav a:hover {
 /* Message box */
 .msg {
     background-color: var(--msg-color);
+    line-height: 1.5em;
     color: var(--text-on-white);
     padding: 20px;
     margin: 20px auto;
@@ -124,6 +125,11 @@ nav a:hover {
 
 .icon {
     padding-top: 10px;
+}
+
+.card-img, .mountains {
+    width: 500px;
+    height: 350px;
 }
 
 #hero-img {
