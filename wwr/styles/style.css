@@ -160,3 +160,20 @@ footer p {
     font-size: 1.2em;
     text-decoration: underline;
 }
+/* Margin Adjustments */
+.rivers-card, 
+.camping-card, 
+.rapids-card {
+    margin: 200px 0;
+}
+
+/* Border and Box-Sizing Enhancements */
+.card-img {
+    border: 10px solid #0C1D32; /* Updated Border */
+}
+
+main section img {
+    box-sizing: border-box; /* Ensures Borders Don't Affect Image Size */
+}
+
+</style>
